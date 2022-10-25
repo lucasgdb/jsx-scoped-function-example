@@ -11,6 +11,6 @@ interface Props {
   children: React.ReactNode;
 }
 
-export function Text(props: Props) {
-  return <Paragraph>{props.children}</Paragraph>;
+export function Text({ children }: Props) {
+  return <Paragraph>{children}</Paragraph>;
 }
