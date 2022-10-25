@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
+import { GLOBAL_PHRASE } from "../constants";
+
 const OuterHelloWorld = styled.div`
   display: flex;
   flex-direction: column;
@@ -31,7 +33,7 @@ export interface Props {
 }
 
 export function HelloWorld({ children }: Props) {
-  const [text, setText] = useState("Hello, world!");
+  const [text, setText] = useState(GLOBAL_PHRASE);
 
   const handleChangeText = (event: React.ChangeEvent<HTMLInputElement>) => {
     setText(event.target.value);
@@ -43,7 +45,7 @@ export function HelloWorld({ children }: Props) {
         type="text"
         value={text}
         onChange={handleChangeText}
-        placeholder="Hello, world!"
+        placeholder={GLOBAL_PHRASE}
         maxLength={24}
       />
 
