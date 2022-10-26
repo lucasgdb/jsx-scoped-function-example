@@ -1,4 +1,4 @@
-# react-scoped-function-example
+# jsx-scoped-function-example
 
 ## Getting started
 
