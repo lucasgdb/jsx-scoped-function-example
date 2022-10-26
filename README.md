@@ -1,4 +1,4 @@
-# will-you-marry-me
+# react-scoped-function-example
 
 ## Getting started
 
