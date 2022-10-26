@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 import { HelloWorld } from "./components/HelloWorld";
-import { Text } from "./components/Text";
 
 const OuterApp = styled.div`
   display: flex;
@@ -12,10 +11,17 @@ const OuterApp = styled.div`
   padding: 24px;
 `;
 
+const Paragraph = styled.p`
+  font: normal normal normal 16px/19px Arial;
+  color: #333;
+
+  height: 19px;
+`;
+
 export function App() {
   return (
     <OuterApp>
-      <HelloWorld>{(props) => <Text>{props.text}</Text>}</HelloWorld>
+      <HelloWorld>{(props) => <Paragraph>{props.text}</Paragraph>}</HelloWorld>
     </OuterApp>
   );
 }
